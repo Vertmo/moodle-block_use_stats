@@ -1034,7 +1034,7 @@ function use_stats_add_module_from_context(&$log) {
 
 /**
  * special time formating,
- * @see report/trainingsessions/locallib.php§report_trainingsessions_format_time();
+ * @see report/trainingsessions/locallib.phpï¿½report_trainingsessions_format_time();
  */
 function block_use_stats_format_time($timevalue) {
     if ($timevalue) {
@@ -1072,6 +1072,7 @@ function block_use_stats_render_aggregate(&$aggregate) {
         echo '<td width="20%">'.$usertotal->events.'</td>';
         echo '</tr>';
     }
+    echo '</table>';
 
     echo '<h3>Course total</h3>';
     echo '<table width="100%">';
@@ -1084,6 +1085,7 @@ function block_use_stats_render_aggregate(&$aggregate) {
         echo '<td width="20%">'.$coursetotal->events.'</td>';
         echo '</tr>';
     }
+    echo '</table>';
 
     echo '<h3>In course</h3>';
     echo '<table width="100%">';
@@ -1096,6 +1098,7 @@ function block_use_stats_render_aggregate(&$aggregate) {
         echo '<td width="20%">'.$coursetotal->events.'</td>';
         echo '</tr>';
     }
+    echo '</table>';
 
     echo '<h3>Activities</h3>';
     echo '<table width="100%">';
@@ -1108,6 +1111,7 @@ function block_use_stats_render_aggregate(&$aggregate) {
         echo '<td width="20%">'.$activitytotal->events.'</td>';
         echo '</tr>';
     }
+    echo '</table>';
 
     echo '<h3>Other</h3>';
     echo '<table width="100%">';
